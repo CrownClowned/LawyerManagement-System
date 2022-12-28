@@ -161,7 +161,7 @@ public class U_D1 extends javax.swing.JFrame {
         try
         {
             Class.forName("java.sql.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sasssy","root","amolika");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sasssy","root","password");
             Statement s= con.createStatement();
             ResultSet rs= s.executeQuery(sql);
             while(rs.next())
