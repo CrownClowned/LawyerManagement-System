@@ -362,7 +362,7 @@ public class Lawyer extends javax.swing.JFrame {
         try         
         {            
         Class.forName("java.sql.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sasssy","root","amolika");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sasssy","root","password");
         Statement s= con.createStatement();
         int fno = Integer.parseInt(t1.getText());
         String fda = t2.getText();
